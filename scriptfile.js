@@ -18,3 +18,8 @@ cards.forEach((card) => {
   card.style.transform = "translateY(20px)";
   observer.observe(card);
 });
+
+ function toggleMenu() {
+    const navLinks = document.getElementById('navLinks');
+    navLinks.classList.toggle('show');
+  }
