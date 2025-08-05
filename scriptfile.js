@@ -19,7 +19,10 @@ cards.forEach((card) => {
   observer.observe(card);
 });
 
- function toggleMenu() {
+ const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
-    navLinks.classList.toggle('show');
-  }
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
