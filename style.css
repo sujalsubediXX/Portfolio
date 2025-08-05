@@ -29,6 +29,7 @@ body {
       font-size: 1.5rem;
       font-weight: 700;
       color: red;
+      cursor:pointer;
     }
 
     .nav-links {
@@ -332,6 +333,7 @@ footer {
 .contact-form button:hover {
   background-color: #0056b3;
 }
+
 
 
 
