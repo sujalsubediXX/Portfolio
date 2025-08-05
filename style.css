@@ -10,8 +10,91 @@ body {
   background-color: #ffffff;
   color: #333;
 }
-
 header {
+  background-color: #fff;
+  border-bottom: 2px solid #eee;
+  padding: 1rem 6rem;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: red;
+}
+
+/* Hamburger hidden by default */
+.hamburger {
+  font-size: 1.8rem;
+  display: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem 2rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    display: none; /* Hide by default */
+  }
+
+  .nav-links.show {
+    display: flex; /* Show when toggled */
+  }
+}
+
+/* header {
   background-color: #fff;
   border-bottom: 2px solid #eee;
   padding: 1rem 6rem;
@@ -56,7 +139,7 @@ nav {
 
 .nav-links a:hover::after {
   width: 100%;
-}
+} */
 
 .maincontainer {
   display: flex;
@@ -269,3 +352,4 @@ footer {
 .contact-form button:hover {
   background-color: #0056b3;
 }
+
