@@ -162,16 +162,22 @@ body {
       overflow: hidden;
       border-right: 2px solid black;
       width: 0;
-      animation: typing 3s steps(30, end) forwards, blink 0.6s infinite;
+      animation: typing 3s steps(30, end) infinite alternate,
+                 blink 0.6s step-end infinite;
     }
 @keyframes typing {
       from { width: 0 }
-      to { width: 21ch } /* Adjust this based on number of characters */
+      to { width: 21ch }
     }
 
     @keyframes blink {
       0%, 100% { border-color: transparent }
       50% { border-color: black }
+    }
+ @media (max-width: 768px) {
+      h1 {
+        font-size: 6vw;
+      }
     }
 .left-content p {
   font-size: 1.1rem;
@@ -351,6 +357,7 @@ footer {
 .contact-form button:hover {
   background-color: #0056b3;
 }
+
 
 
 
