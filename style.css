@@ -146,7 +146,9 @@ body {
 .right-img img {
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+ box-shadow: 0 0 20px rgb(0 0 0);
+/*   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
+  
 }
 
 .left-content {
@@ -361,6 +363,7 @@ footer {
 .contact-form button:hover {
   background-color: #0056b3;
 }
+
 
 
 
