@@ -164,7 +164,7 @@ body {
       overflow: hidden;
       border-right: 2px solid black;
       width: 0;
-      animation: typing 4.5s steps(30, end) infinite alternate,
+      animation: typing 4s steps(30, end) infinite alternate,
                  blink 0.6s step-end infinite;
     }
 @keyframes typing {
@@ -185,6 +185,10 @@ body {
   }
    .left-content {
       padding: 2rem 0.3rem;
+   }
+
+   footer {
+     font-size:0.9rem;s
    }
 }
 .left-content p {
@@ -369,6 +373,7 @@ footer {
 .contact-form button:hover {
   background-color: #0056b3;
 }
+
 
 
 
