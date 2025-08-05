@@ -242,7 +242,7 @@ section {
 }
 
 .project-card p{
-    line-height: 24px;
+    line-height: 26px;
 }
 
 .skill-card:hover,
@@ -361,6 +361,7 @@ footer {
 .contact-form button:hover {
   background-color: #0056b3;
 }
+
 
 
 
