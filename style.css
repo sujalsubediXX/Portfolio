@@ -16,6 +16,8 @@ body {
       border-bottom: 2px solid #eee;
       padding: 1rem 6rem;
       z-index: 1000;
+      position:sticky;
+      top:0;
     
     }
 
@@ -333,6 +335,7 @@ footer {
 .contact-form button:hover {
   background-color: #0056b3;
 }
+
 
 
 
