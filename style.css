@@ -194,6 +194,7 @@ body {
 .left-content p {
   font-size: 1.1rem;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .btn {
@@ -373,6 +374,7 @@ footer {
 .contact-form button:hover {
   background-color: #0056b3;
 }
+
 
 
 
