@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sujal's Portfolio</title>
+    <link rel="icon" href="images/myIcon.png" type="image/png" />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+   <header>
+    <nav>
+      <a href="#home" class="logo">SujalSubedi</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="hamburger" id="hamburger">☰</button>
+    </nav>
+  </header>
+
+
+
+    <section id="home" class="maincontainer">
+      <div class="right-img">
+        <img src="./images/sujalsubedi.jpg" alt="Your Photo" />
+      </div>
+      <div class="left-content">
+        <h1>Hello, I'm SujalSubedi !</h1>
+        <p>
+          I’m a BCA student passionate about web and app development. I have built projects using PHP and the MERN stack,
+          and I also have knowledge of Java basics, Servlets, and Spring Boot. I enjoy creating full-stack web applications 
+          and mobile apps. I am currently seeking a  internship to 
+          enhance my skills through real-world projects.
+        </p>
+        <button
+          class="btn"
+          onclick="document.getElementById('projects').scrollIntoView()"
+        >
+          View My Projects
+        </button>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="project-title">Skills & Technologies</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <img src="./images/html.png" alt="HTML" />
+          <div>HTML</div>
+        </div>
+        <div class="skill-card">
+          <img src="./images/css.png" alt="CSS" />
+          <div>CSS</div>
+        </div>
+        <div class="skill-card">
+          <img src="./images/js.png" alt="JavaScript" />
+          <div>JavaScript</div>
+        </div>
+        <div class="skill-card">
+          <img src="./images/react.png" alt="React" />
+          <div>React</div>
+        </div>
+        <div class="skill-card">
+          <img src="./images/node.png" alt="Node.js" />
+          <div>Node.js</div>
+        </div>
+        <div class="skill-card">
+          <img src="./images/mongodb.png" alt="MongoDB" />
+          <div>MongoDB</div>
+        </div>
+        <div class="skill-card">
+          <img src="./images/java.png" alt="Java" />
+          <div>Java</div>
+        </div>
+        <div class="skill-card">
+          <img src="./images/php.png" alt="PHP" />
+          <div>PHP</div>
+        </div>
+        <div class="skill-card">
+          <img src="./images/git.png" alt="Git" />
+          <div>Git</div>
+        </div>
+        <div class="skill-card">
+          <img src="./images/figma.png" alt="Figma" />
+          <div>Figma</div>
+        </div>
+         <div class="skill-card">
+           <img src="./images/tailwind.png" style="border-radius:999px;" alt="Figma" />
+           <div>Tailwind CSS</div>
+        </div>
+         <div class="skill-card">
+         <img src="./images/springboot.png" alt="Figma" />
+          <div>SpringBoot</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="project-title">Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="./images/hams.png" alt="hams"" />
+          <h3>HAMS</h3>
+          <p>
+            Healthcare Appointment Management System built using the MERN stack.
+            Enables patients to book appointments, view medical history, and
+            match with doctors based on symptoms.
+          </p>
+          <div class="tags">
+            <span class="tag">MongoDB</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="./images/bookhub.png" alt="bookhub" />
+          <h3>BookHub</h3>
+          <p>
+            BookHub is a book borrowing platform built using the MERN stack  enabling users to browse,
+            borrow, and manage books seamlessly. Features include a responsive UI ,
+            admin dashboard.
+          </p>
+          <div class="tags">
+            <span class="tag">MongoDB</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="./images/electronic-ecommerce.png" alt="ecommerce" />
+          <h3>Online Electronic Shop</h3>
+          <p>
+            Responsive electronic e-commerce website built with PHP, JavaScript,
+            HTML, and CSS. Users can explore products, add them to cart, and
+            place orders with a smooth and dynamic UI.
+          </p>
+          <div class="tags">
+            <span class="tag">PHP</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <p>
+        Feel free to reach out to me or just say a friendly hello.👋
+      </p>
+      <form action="https://formsubmit.co/sujalsubedi541@gmail.com" method="POST"   class="contact-form">
+        <input type="text" name="name" required placeholder="Your Name" />
+        <input type="email" name="email" required placeholder="Your Email" />
+        <textarea name="message" required placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+     
+    </section>
+
+    <footer>
+      &copy; <span id="datenow"></span> SujalSubedi | Built with using HTML, CSS
+      & JS
+    </footer>
+    <script src="scriptfile.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
